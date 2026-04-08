@@ -15,13 +15,13 @@ OpenMM-based molecular dynamics pipeline for antibody structures with AMBER19/TI
 ## Installation
 
 ```bash
-pip install git+https://github.com/youruser/antibody-md.git
+pip install git+https://github.com/kingifashe/antibody-md.git
 ```
 
 Or for development:
 
 ```bash
-git clone https://github.com/youruser/antibody-md.git
+git clone https://github.com/kingifashe/antibody-md.git
 cd antibody-md
 pip install -e .
 ```
