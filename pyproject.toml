@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "antibody-md"
+version = "0.3.0"
+description = "OpenMM MD pipeline for antibody simulations with AMBER19/TIP3P-FB"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+dependencies = [
+    "openmm>=8.0",
+    "pdbfixer",
+]
+
+[project.scripts]
+antibody-md = "antibody_md.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/antibody_md"]
